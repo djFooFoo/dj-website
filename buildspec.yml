@@ -13,7 +13,7 @@ phases:
       - yarn init -2
   pre_build:
     commands:
-      - echo Installing Dependencies
+      - echo Installing the  Dependencies
       - yarn
   build:
     commands:
