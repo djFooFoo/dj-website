@@ -4,7 +4,8 @@ phases:
   install:
     commands:
       - echo Installing NodeJS 16...
-      - curl -fsSL https://deb.nodesource.com/setup_16.x | -E bash - && apt-get install -y nodejs
+      - curl -fsSL https://deb.nodesource.com/setup_16.x 
+      - apt-get install -y nodejs
       - echo Installing yarn
       - corepack enable
       - npm i -g corepack
