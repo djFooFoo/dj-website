@@ -15,7 +15,7 @@
     "docker-release": "npm run-script docker-login && npm run-script docker-build && npm run-script docker-tag && npm run-script docker-push"
   },
   "private": true,
-  "dependencies": {
+  "dependencies": { 
     "@angular/animations": "^13.1.1",
     "@angular/common": "^13.1.1",
     "@angular/compiler": "^13.1.1",
@@ -39,6 +39,7 @@
     "hover.css": "^2",
     "jquery": "^3",
     "moment": "~2.29",
+    "ng": "^0.0.0",
     "ng-lazyload-image": "^9",
     "rxjs": "^6"
   },
