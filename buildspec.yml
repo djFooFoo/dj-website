@@ -25,4 +25,4 @@ artifacts:
   files:
   - 'website/**/*'
   discard-paths: no
-  base-dir: dist
+  base-directory: dist
