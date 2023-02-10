@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing NodeJS 16...
+      - curl -fsSL https://deb.nodesource.com/setup_16.x | bash - &&  apt-get install -y nodejs
+      - echo Installing yarn
+      - corepack enable
+      - npm i -g corepack
+      - corepack prepare yarn@stable --activate
+      - yarn init -2
+  pre_build:
+    commands:
+      - echo Installing the  Dependencies
+      - yarn
+  build:
+    commands:
+      - echo Testing
+      - yarn test
+      - echo Building
+      - yarn build
+artifacts:
+  files:
+  - 'website/**/*'
+  discard-paths: no
+  base-directory: dist
